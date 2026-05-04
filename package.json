@@ -1,0 +1,19 @@
+{
+  "name": "ayd-taxi-api",
+  "version": "1.0.0",
+  "description": "Sistema de gestión y transporte AYD TAXI",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && ..\\.venv\\Scripts\\python.exe manage.py runserver",
+    "build": "cd frontend && npm run build",
+    "install:all": "npm install && cd frontend && npm install && cd ../backend && ..\\.venv\\Scripts\\python.exe -m pip install -r requirements.txt",
+    "start": "cd backend && ..\\.venv\\Scripts\\python.exe manage.py runserver"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "keywords": ["django", "react", "typescript", "taxi", "transporte"],
+  "author": "AYD TAXI Team",
+  "license": "MIT"
+}

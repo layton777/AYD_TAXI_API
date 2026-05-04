@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="mainGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#45b939"/>
+      <stop offset="50%" style="stop-color:#2e7d32"/>
+      <stop offset="100%" style="stop-color:#1a9f0b"/>
+    </linearGradient>
+    <linearGradient id="leafGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#66bb6a"/>
+      <stop offset="100%" style="stop-color:#2e7d32"/>
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="rgba(0,0,0,0.3)"/>
+    </filter>
+  </defs>
+  
+  <!-- Fondo circular con gradiente sutil -->
+  <circle cx="50" cy="50" r="48" fill="url(#mainGradient)" opacity="0.1"/>
+  
+  <!-- Planta principal centrada -->
+  <g transform="translate(50,50)">
+    <!-- Hoja superior izquierda -->
+    <path d="M-8,-25 Q-20,-30 -25,-20 Q-20,-10 -8,-15 Q-5,-20 -8,-25" 
+          fill="url(#leafGradient)" filter="url(#shadow)"/>
+    
+    <!-- Hoja superior derecha -->
+    <path d="M8,-25 Q20,-30 25,-20 Q20,-10 8,-15 Q5,-20 8,-25" 
+          fill="url(#leafGradient)" filter="url(#shadow)"/>
+    
+    <!-- Hoja central grande -->
+    <path d="M0,-30 Q-15,-35 -20,-20 Q-10,-5 0,-10 Q10,-5 20,-20 Q15,-35 0,-30" 
+          fill="url(#mainGradient)" filter="url(#shadow)"/>
+    
+    <!-- Tallo principal -->
+    <rect x="-2" y="-10" width="4" height="35" 
+          fill="url(#mainGradient)" rx="2" filter="url(#shadow)"/>
+    
+    <!-- Hojas laterales pequeñas -->
+    <path d="M-15,0 Q-25,-5 -25,5 Q-15,10 -10,5 Q-12,0 -15,0" 
+          fill="url(#leafGradient)" filter="url(#shadow)"/>
+    <path d="M15,0 Q25,-5 25,5 Q15,10 10,5 Q12,0 15,0" 
+          fill="url(#leafGradient)" filter="url(#shadow)"/>
+    
+    <!-- Hojas inferiores -->
+    <path d="M-12,15 Q-22,10 -22,20 Q-12,25 -7,20 Q-9,15 -12,15" 
+          fill="url(#leafGradient)" filter="url(#shadow)"/>
+    <path d="M12,15 Q22,10 22,20 Q12,25 7,20 Q9,15 12,15" 
+          fill="url(#leafGradient)" filter="url(#shadow)"/>
+    
+    <!-- Centro de la planta (núcleo) -->
+    <circle cx="0" cy="-15" r="6" fill="url(#mainGradient)" filter="url(#shadow)"/>
+    <circle cx="0" cy="-15" r="3" fill="#66bb6a"/>
+    
+    <!-- Detalles decorativos (gotas de rocío) -->
+    <circle cx="-18" cy="-22" r="1.5" fill="#e8f5e8" opacity="0.8"/>
+    <circle cx="16" cy="-18" r="1" fill="#e8f5e8" opacity="0.8"/>
+    <circle cx="-8" cy="8" r="1" fill="#e8f5e8" opacity="0.8"/>
+  </g>
+  
+  <!-- Texto integrado sutil (opcional) -->
+  <text x="50" y="85" text-anchor="middle" font-family="Arial, sans-serif" 
+        font-size="8" font-weight="bold" fill="url(#mainGradient)" opacity="0.6">A</text>
+</svg> 
