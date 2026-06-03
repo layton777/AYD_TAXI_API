@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Optimization -->
+    <title>AYD TAXI - Movilidad Inteligente en el Valle de Ubaté</title>
+    <meta name="description" content="Landing Page oficial y asistente de soporte virtual de AYD TAXI. Conectando pasajeros con conductores formales en tiempo real en la provincia de Ubaté.">
+    <meta name="keywords" content="taxi, transporte, ubaté, cucunubá, sutatausa, movilidad, conductor, pasajero, gps, tarifas por zona">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <!-- 1. Menú Lateral Izquierdo (Sidebar) -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="1" y="3" width="22" height="13" rx="2" ry="2"></rect>
+                        <path d="M7 16H3a2 2 0 0 0-2 2v3h6v-5z"></path>
+                        <path d="M21 16h-4v5h6v-3a2 2 0 0 0-2-2z"></path>
+                        <path d="M12 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"></path>
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <h1>AYD TAXI</h1>
+                    <p>Valle de Ubaté</p>
+                </div>
+            </div>
+
+            <ul class="sidebar-menu">
+                <li>
+                    <a href="#" class="menu-link active" data-tab="home-section" id="menu-home">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                        </svg>
+                        Inicio (Historia)
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu-link" data-tab="services-section" id="menu-services">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor">
+                            <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                            <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                            <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                            <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                        </svg>
+                        Módulos / Servicios
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu-link" data-tab="developers-section" id="menu-developers">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                        Creadores / Ingenieros
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu-link" data-tab="contact-section" id="menu-contact">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        Contáctanos
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu-link" data-tab="chatbot-section" id="menu-chatbot">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                        Asistente IA (Soporte)
+                    </a>
+                </li>
+            </ul>
+
+            <div class="sidebar-footer">
+                <p>&copy; 2026 AYD TAXI</p>
+                <p>Ubaté, Cundinamarca</p>
+            </div>
+        </aside>
+
+        <!-- 2. Contenedor de Contenido Principal (Derecha) -->
+        <main class="main-content">
+            <!-- Header Móvil (Visible solo en pantallas pequeñas) -->
+            <header class="mobile-header">
+                <div class="mobile-title">AYD TAXI</div>
+                <button id="menu-toggle" class="menu-toggle-btn" aria-label="Abrir menú">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </header>
+
+            <!-- SECCIÓN 1: INICIO / HISTORIA -->
+            <section id="home-section" class="content-section active">
+                <div class="section-header">
+                    <h2>Inicio</h2>
+                    <p>La historia y visión detrás de AYD TAXI</p>
+                </div>
+                
+                <p class="history-intro">
+                    AYD TAXI nace como un proyecto innovador de desarrollo tecnológico y movilidad, diseñado por estudiantes de ingeniería con el propósito de estructurar una alternativa de transporte eficiente, confiable y segura. A través de la optimización y comunicación en tiempo real, buscamos impactar favorablemente la conectividad en la provincia del Valle de Ubaté.
+                </p>
+
+                <!-- Línea de tiempo interactiva -->
+                <div class="history-timeline" id="history-timeline">
+                    <!-- Se carga dinámicamente mediante JS -->
+                </div>
+            </section>
+
+            <!-- SECCIÓN 2: SERVICIOS / MÓDULOS -->
+            <section id="services-section" class="content-section">
+                <div class="section-header">
+                    <h2>Módulos del Sistema</h2>
+                    <p>La arquitectura modular que impulsa el servicio en tiempo real</p>
+                </div>
+
+                <div class="modules-grid" id="modules-grid">
+                    <!-- Se carga dinámicamente mediante JS -->
+                </div>
+            </section>
+
+            <!-- SECCIÓN 3: CREADORES / INGENIEROS -->
+            <section id="developers-section" class="content-section">
+                <div class="section-header">
+                    <h2>Creadores del Sistema</h2>
+                    <p>Los ingenieros detrás del desarrollo y diseño de la plataforma</p>
+                </div>
+
+                <div class="developers-list" id="developers-list">
+                    <!-- Se carga dinámicamente mediante JS -->
+                </div>
+            </section>
+
+            <!-- SECCIÓN 4: CONTACTO -->
+            <section id="contact-section" class="content-section">
+                <div class="section-header">
+                    <h2>Contáctanos</h2>
+                    <p>Soporte técnico, reportes e información del sistema</p>
+                </div>
+
+                <div class="contact-container">
+                    <!-- Datos de contacto -->
+                    <div class="contact-info-panel">
+                        <div class="contact-detail-card">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Correo Electrónico</h4>
+                                <p>soporte@aydtaxi.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-detail-card">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Oficina de Operaciones</h4>
+                                <p>Ubaté, Cundinamarca, Colombia</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-detail-card">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Horario de Operación</h4>
+                                <p>Lunes a Domingo — 24 Horas</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Formulario de contacto -->
+                    <div class="contact-form-panel">
+                        <form id="contact-form" novalidate>
+                            <div class="form-group">
+                                <label for="contact-name">Nombre Completo</label>
+                                <input type="text" id="contact-name" placeholder="Ej. Juan Pérez" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-email">Correo Electrónico</label>
+                                <input type="email" id="contact-email" placeholder="Ej. juan@example.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-message">Mensaje / Solicitud</label>
+                                <textarea id="contact-message" rows="5" placeholder="Escribe tu consulta o reporte aquí..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="submit-btn">Enviar Mensaje</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECCIÓN 5: CHATBOT -->
+            <section id="chatbot-section" class="content-section">
+                <div class="chatbot-fullscreen-container">
+                    <!-- Header -->
+                    <div class="chatbot-header">
+                        <div class="chatbot-header-info">
+                            <div class="chatbot-avatar">AT</div>
+                            <div class="chatbot-title">
+                                <h3>Asistente AYD TAXI</h3>
+                                <span>En línea</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Chat Area -->
+                    <div class="chat-area" id="chat-area">
+                        <div class="message system">
+                            <div class="bubble">
+                                ¡Hola! Soy el asistente virtual oficial de AYD TAXI. 
+                                ¿Tienes dudas sobre el funcionamiento de los viajes, las tarifas estimadas, las zonas de operación o quieres conocer más sobre los creadores del proyecto (Daniel y Alejandro)? Pregúntame con confianza.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Input Area -->
+                    <div class="input-area">
+                        <input type="text" id="user-input" placeholder="Pregúntame sobre AYD TAXI (tarifas, zonas, creadores...)" autocomplete="off">
+                        <button id="send-btn" class="send-btn" aria-label="Enviar mensaje">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Scripts (Modulo Carga -> Conocimiento -> Chatbot -> UI) -->
+    <script src="js/env_loader.js"></script>
+    <script src="js/knowledge_base.js"></script>
+    <script src="js/chatbot.js"></script>
+    <script src="js/ui.js"></script>
+
+    <!-- Script Inline para conectar eventos que no están delegados directamente -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const userInput = document.getElementById("user-input");
+            const sendBtn = document.getElementById("send-btn");
+
+            // Escucha clics en enviar
+            if (sendBtn && userInput) {
+                sendBtn.addEventListener("click", () => {
+                    const text = userInput.value.trim();
+                    if (text) {
+                        window.sendMessageToGemini(text);
+                    }
+                });
+
+                // Escucha presionar ENTER en el input
+                userInput.addEventListener("keypress", (e) => {
+                    if (e.key === "Enter") {
+                        const text = userInput.value.trim();
+                        if (text) {
+                            window.sendMessageToGemini(text);
+                        }
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

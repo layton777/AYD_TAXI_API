@@ -15,6 +15,7 @@ import TarifasPage from './pages/TarifasPage';
 import CalificacionesPage from './pages/CalificacionesPage';
 import UsuariosPage from './pages/UsuariosPage';
 import ProfilePage from './pages/ProfilePage';
+import ChatbotPage from './pages/ChatbotPage';
 
 // Tema AYD TAXI — Amarillo, Negro, Blanco
 const theme = createTheme({
@@ -155,6 +156,9 @@ function App() {
           }/>
           <Route path="/perfil" element={
             <ProtectedRoute><Layout><ProfilePage /></Layout></ProtectedRoute>
+          }/>
+          <Route path="/chatbot" element={
+            <ProtectedRoute><Layout><ChatbotPage /></Layout></ProtectedRoute>
           }/>
         </Routes>
       </Router>

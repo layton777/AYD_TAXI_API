@@ -1,6 +1,6 @@
 import { useNavigate, useLocation } from 'react-router-dom';
 import { Drawer, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Typography, Box, Divider, Avatar, Chip } from '@mui/material';
-import { Dashboard, DirectionsCar, LocalTaxi, AttachMoney, Star, People, Person, Logout, AdminPanelSettings } from '@mui/icons-material';
+import { Dashboard, DirectionsCar, LocalTaxi, AttachMoney, Star, People, Person, Logout, AdminPanelSettings, ChatBubble } from '@mui/icons-material';
 
 const drawerWidth = 260;
 
@@ -12,6 +12,7 @@ const menuItems = [
   { text: 'Calificaciones', icon: <Star />, path: '/calificaciones' },
   { text: 'Usuarios', icon: <People />, path: '/usuarios' },
   { text: 'Mi Perfil', icon: <Person />, path: '/perfil' },
+  { text: 'Asistente IA', icon: <ChatBubble />, path: '/chatbot' },
 ];
 
 export default function Navigation() {
